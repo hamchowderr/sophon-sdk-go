@@ -22,3 +22,8 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key

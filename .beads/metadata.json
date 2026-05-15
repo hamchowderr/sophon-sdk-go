@@ -1,0 +1,8 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "server",
+  "dolt_database": "sophon_sdk_go",
+  "project_id": "6efab642-6a17-4fc6-a66e-beb1afb30982",
+  "global_dolt_database": "beads_global"
+}
