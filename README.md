@@ -244,6 +244,24 @@ bug fixes, helper-layer improvements, and additive types. Once we cut
 major bumps. See [`CHANGELOG.md`](./CHANGELOG.md) for the per-release
 log.
 
+## Security
+
+Report vulnerabilities privately — see [`SECURITY.md`](./SECURITY.md) (GitHub
+private vulnerability reporting or `support@sophon.rs`). Do not open a public
+issue for a security bug.
+
+**API keys are server-side, billing-impacting credentials.** Keep them on the
+server (environment variable or secret manager) — never in client apps, public
+repos, logs, or analytics. The SDK only ever sends the key as an
+`Authorization: Bearer` header over HTTPS; it is never placed in a URL.
+
+**Rotate** a key by creating a new one at <https://sophon.rs/account/general>,
+rolling it out to your servers, then revoking the old one. Keys are shown only
+once at creation — treat any exposure as an incident and rotate immediately.
+
+Use of the SOPHON API is subject to the Acceptable Use Policy at
+<https://sophon.rs>.
+
 ## License
 
 Proprietary — see [`LICENSE`](./LICENSE).
